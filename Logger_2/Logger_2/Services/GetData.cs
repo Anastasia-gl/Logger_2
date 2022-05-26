@@ -9,9 +9,11 @@
 
         public void File(Interfaces.Services.IFile file, string str)
         {
+            file.WriteJsonDir();
+            file.CreateDir();
             file.WriteText(str);
             file.Save();
-            file.WriteJSON();
+            file.Delete();
         }
     }
 }

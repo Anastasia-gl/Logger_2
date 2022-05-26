@@ -6,6 +6,8 @@
 
         public void Save();
 
-        public void WriteJSON();
+        public void WriteJsonDir();
+        public void CreateDir();
+        public void Delete();
     }
 }
